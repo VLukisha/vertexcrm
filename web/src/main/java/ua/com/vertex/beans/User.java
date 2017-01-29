@@ -164,7 +164,9 @@ public class User {
             instance.setPassportScan(passportScan);
             return this;
         }
+        //Temporarily !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         public Builder setPassportScan(Blob passportScan) throws SQLException {
+
 
             int blobLength = (int) passportScan.length();
             byte[] blobAsBytes = passportScan.getBytes(1, blobLength);
@@ -177,7 +179,7 @@ public class User {
             instance.setPhoto(photo);
             return this;
         }
-
+        //Temporarily !!!!!!!!!`!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         public Builder setPhoto(Blob photo) throws SQLException {
 
             int blobLength = (int) photo.length();
