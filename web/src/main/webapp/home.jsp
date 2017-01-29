@@ -1,8 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
-
-<!DOCTYPE html>
 <!-- saved from url=(0048)https://vertex-academy.com/lecturer-bakumov.html -->
 <html lang="en" charset="UTF-8">
 <head>
@@ -24,10 +20,10 @@
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
             i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
             a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
+                    m = s.getElementsByTagName(o)[0];
             a.async = 1;
             a.src = g;
             m.parentNode.insertBefore(a, m)
@@ -70,10 +66,10 @@
         });
 
         var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () {
-                n.parentNode.insertBefore(s, n);
-            };
+                s = d.createElement("script"),
+                f = function () {
+                    n.parentNode.insertBefore(s, n);
+                };
         s.type = "text/javascript";
         s.async = true;
         s.src = "https://mc.yandex.ru/metrika/watch.js";
@@ -108,18 +104,7 @@
 <div class="page gray-page mh100">
     <div class="container pt1_5">
 
-        <div align="center">
-            <table border="0">
-                <tr>
-                    <td colspan="2" align="center"><h2>
-                        Congratulation ${userFormRegistration.firstName} ${userFormRegistration.lastName},
-                        registration success</h2></td>
-
-                    Your secret session id - ${userID}
-                </tr>
-            </table>
-
-        </div>
+        ${userIds}
 
     </div>
 </div>

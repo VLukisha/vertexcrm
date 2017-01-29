@@ -1,18 +1,17 @@
-package ua.com.vertex.dao.interfaces;
+package ua.com.vertex.dao;
 
 
 import ua.com.vertex.beans.User;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface UserDaoInf {
 
-    Optional<User> getUser(int id);
+    @SuppressWarnings("unused")
+    User getUser(long id);
 
     @SuppressWarnings("unused")
-    void deleteUser(int id);
+    void deleteUser(long id);
 
-    @SuppressWarnings("unused")
     List<Integer> getAllUserIds();
 }

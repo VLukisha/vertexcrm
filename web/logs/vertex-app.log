@@ -1,0 +1,498 @@
+08:27:30.247 [main] DEBUG org.jboss.logging (LoggerFactory.java:19) - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+08:27:30.249 [main] INFO  org.hibernate.validator.internal.util.Version (Version.java:30) - HV000001: Hibernate Validator 5.2.4.Final
+08:27:30.260 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver (DefaultTraversableResolver.java:70) - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+08:27:30.265 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:156) - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+08:27:30.266 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:192) - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy34
+08:27:30.267 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:91) - Trying to load META-INF/validation.xml for XML based Validator configuration.
+08:27:30.268 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:54) - Trying to load META-INF/validation.xml via TCCL
+08:27:30.268 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:60) - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+08:27:30.268 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:98) - No META-INF/validation.xml found. Using annotation based configuration only.
+08:27:30.367 [main] ERROR ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:106) - null
+java.lang.RuntimeException: null
+	at ua.com.vertex.controllers.CertificateDetailsPageController.showUserPhoto(CertificateDetailsPageController.java:99) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_111]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221) [spring-web-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) [spring-web-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:114) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687) [javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:65) [spring-test-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) [javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:167) [spring-test-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134) [spring-test-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:155) [spring-test-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at ua.com.vertex.controllers.CertificateDetailsPageControllerTest.photoWebMvcShouldReturnErrorViewAfterUncheckedException(CertificateDetailsPageControllerTest.java:187) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_111]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367) [surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274) [surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) [surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161) [surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290) [surefire-booter-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242) [surefire-booter-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) [surefire-booter-2.19.1.jar:2.19.1]
+08:27:30.384 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:61) - nullProcessing request with certificateId=222
+08:27:30.385 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:72) - nullPassing certificate and user data to JSP
+08:27:30.389 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:61) - nullProcessing request with certificateId=222
+08:27:30.389 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:72) - nullPassing certificate and user data to JSP
+08:27:30.390 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:61) - nullProcessing request with certificateId=55555
+08:27:30.390 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:72) - nullPassing certificate and user data to JSP
+08:27:30.392 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:103) - nullPassing user photo to JSP
+08:27:30.393 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:61) - nullProcessing request with certificateId=222
+08:27:30.394 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:72) - nullPassing certificate and user data to JSP
+08:27:30.402 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver (DefaultTraversableResolver.java:70) - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+08:27:30.402 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:156) - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+08:27:30.402 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:192) - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy34
+08:27:30.402 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:91) - Trying to load META-INF/validation.xml for XML based Validator configuration.
+08:27:30.403 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:54) - Trying to load META-INF/validation.xml via TCCL
+08:27:30.403 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:60) - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+08:27:30.403 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:98) - No META-INF/validation.xml found. Using annotation based configuration only.
+08:27:30.409 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:103) - nullPassing user photo to JSP
+08:27:30.417 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver (DefaultTraversableResolver.java:70) - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+08:27:30.417 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:156) - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+08:27:30.417 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:192) - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy34
+08:27:30.417 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:91) - Trying to load META-INF/validation.xml for XML based Validator configuration.
+08:27:30.418 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:54) - Trying to load META-INF/validation.xml via TCCL
+08:27:30.418 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:60) - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+08:27:30.418 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:98) - No META-INF/validation.xml found. Using annotation based configuration only.
+08:27:30.519 [main] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator (PlatformResourceBundleLocator.java:126) - ValidationMessages not found.
+08:27:30.520 [main] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator (PlatformResourceBundleLocator.java:126) - ContributorValidationMessages not found.
+08:27:30.521 [main] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator (PlatformResourceBundleLocator.java:123) - org.hibernate.validator.ValidationMessages found.
+08:27:30.536 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:57) - nullRequested data is invalid
+08:27:30.544 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver (DefaultTraversableResolver.java:70) - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+08:27:30.544 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:156) - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+08:27:30.544 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:192) - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy34
+08:27:30.545 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:91) - Trying to load META-INF/validation.xml for XML based Validator configuration.
+08:27:30.545 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:54) - Trying to load META-INF/validation.xml via TCCL
+08:27:30.545 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:60) - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+08:27:30.545 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:98) - No META-INF/validation.xml found. Using annotation based configuration only.
+08:27:30.552 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:57) - nullRequested data is invalid
+08:27:30.556 [main] DEBUG ua.com.vertex.controllers.UserController (UserController.java:46) - Request to '/getCertificateByUserId' with userId=111
+08:27:30.556 [main] DEBUG ua.com.vertex.controllers.UserController (UserController.java:53) - Request to '/getCertificateByUserId' return 'user.jsp' 
+08:27:30.557 [main] DEBUG ua.com.vertex.controllers.UserController (UserController.java:46) - Request to '/getCertificateByUserId' with userId=222
+08:27:30.558 [main] DEBUG ua.com.vertex.controllers.UserController (UserController.java:53) - Request to '/getCertificateByUserId' return 'user.jsp' 
+08:27:30.561 [main] DEBUG ua.com.vertex.controllers.UserController (UserController.java:46) - Request to '/getCertificateByUserId' with userId=333
+08:27:30.562 [main] DEBUG ua.com.vertex.controllers.UserController (UserController.java:53) - Request to '/getCertificateByUserId' return 'user.jsp' 
+08:27:30.587 [main] DEBUG ua.com.vertex.controllers.UserController (RegistrationUserLogicImpl.java:39) - Check for a match on the password
+08:27:30.588 [main] DEBUG ua.com.vertex.controllers.UserController (RegistrationUserLogicImpl.java:45) - Password encryption
+08:27:30.679 [main] DEBUG ua.com.vertex.controllers.UserController (RegistrationUserLogicImpl.java:39) - Check for a match on the password
+08:27:30.679 [main] DEBUG ua.com.vertex.controllers.UserController (RegistrationUserLogicImpl.java:45) - Password encryption
+08:27:30.754 [main] INFO  ua.com.vertex.controllers.UserController (RegistrationController.java:40) - First request to registration
+08:27:30.757 [main] INFO  ua.com.vertex.controllers.CertificateDetails (CertificateDetails.java:35) - Request to '/getCertificateDetails' with certificateId=-1
+08:27:30.758 [main] INFO  ua.com.vertex.controllers.CertificateDetails (CertificateDetails.java:46) - Request to '/getCertificateDetails' return certificate
+08:27:30.758 [main] INFO  ua.com.vertex.controllers.CertificateDetails (CertificateDetails.java:35) - Request to '/getCertificateDetails' with certificateId=1
+08:27:30.759 [main] INFO  ua.com.vertex.controllers.CertificateDetails (CertificateDetails.java:46) - Request to '/getCertificateDetails' return certificate
+08:27:30.759 [main] INFO  ua.com.vertex.controllers.CertificateDetails (CertificateDetails.java:35) - Request to '/getCertificateDetails' with certificateId=1
+08:27:30.759 [main] INFO  ua.com.vertex.controllers.CertificateDetails (CertificateDetails.java:46) - Request to '/getCertificateDetails' return certificate
+08:27:30.760 [main] INFO  ua.com.vertex.controllers.CertificateDetails (CertificateDetails.java:35) - Request to '/getCertificateDetails' with certificateId=1
+08:27:30.760 [main] INFO  ua.com.vertex.controllers.CertificateDetails (CertificateDetails.java:46) - Request to '/getCertificateDetails' return certificate
+08:27:31.250 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver (DefaultTraversableResolver.java:70) - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+08:27:31.251 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:156) - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+08:27:31.251 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:178) - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+08:27:31.252 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:192) - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy34
+08:27:31.252 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:91) - Trying to load META-INF/validation.xml for XML based Validator configuration.
+08:27:31.252 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:47) - Trying to load META-INF/validation.xml via user class loader
+08:27:31.253 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:54) - Trying to load META-INF/validation.xml via TCCL
+08:27:31.253 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:60) - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+08:27:31.253 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:98) - No META-INF/validation.xml found. Using annotation based configuration only.
+08:27:31.371 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:52) - nullRetrieving certificate id=222
+08:27:31.388 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:63) - nullRetrieved certificate id=222
+08:27:31.389 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:41) - nullRetrieving user id=55555
+08:27:31.391 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:47) - nullNo user id=55555
+08:27:31.391 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:50) - nullRetrieved user id=55555
+08:27:31.392 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:52) - nullRetrieving certificate id=55555
+08:27:31.393 [main] ERROR ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:60) - nullNo certificate in DB, id=55555
+08:27:31.393 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:63) - nullRetrieved certificate id=55555
+08:27:31.395 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:41) - nullRetrieving user id=22
+08:27:31.397 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:50) - nullRetrieved user id=22
+08:27:31.404 [main] DEBUG ua.com.vertex.controllers.UserController (RegistrationUserLogicImpl.java:39) - Check for a match on the password
+08:27:31.405 [main] DEBUG ua.com.vertex.controllers.UserController (RegistrationUserLogicImpl.java:51) - Conversion of the model UserFormRegistration to User
+08:27:31.406 [main] DEBUG ua.com.vertex.controllers.UserController (RegistrationUserLogicImpl.java:51) - Conversion of the model UserFormRegistration to User
+08:27:31.407 [main] DEBUG ua.com.vertex.controllers.UserController (RegistrationUserLogicImpl.java:39) - Check for a match on the password
+08:27:31.411 [main] DEBUG ua.com.vertex.logic.CertificateLogicImpl (CertificateLogicImpl.java:36) - Call - certificateDao.getCertificateById(1);
+08:27:31.412 [main] DEBUG ua.com.vertex.logic.CertificateLogicImpl (CertificateLogicImpl.java:31) - Call - certificateDao.getAllCertificateByUserId(-1);
+08:27:31.413 [main] DEBUG ua.com.vertex.logic.CertificateLogicImpl (CertificateLogicImpl.java:36) - Call - certificateDao.getCertificateById(1);
+08:27:31.413 [main] DEBUG ua.com.vertex.logic.CertificateLogicImpl (CertificateLogicImpl.java:31) - Call - certificateDao.getAllCertificateByUserId(1);
+08:27:31.423 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:42) - Retrieved all certificates by id=1
+08:27:31.427 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:52) - nullRetrieving certificate id=-1
+08:27:31.428 [main] ERROR ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:60) - nullNo certificate in DB, id=-1
+08:27:31.429 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:63) - nullRetrieved certificate id=-1
+08:27:31.430 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:52) - nullRetrieving certificate id=55555
+08:27:31.431 [main] ERROR ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:60) - nullNo certificate in DB, id=55555
+08:27:31.431 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:63) - nullRetrieved certificate id=55555
+08:27:31.433 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:52) - nullRetrieving certificate id=1
+08:27:31.433 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:63) - nullRetrieved certificate id=1
+08:27:31.434 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:52) - nullRetrieving certificate id=1
+08:27:31.434 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:63) - nullRetrieved certificate id=1
+08:27:31.435 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:42) - Retrieved all certificates by id=-1
+08:27:31.437 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:42) - Retrieved all certificates by id=1
+08:27:31.439 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:52) - nullRetrieving certificate id=222
+08:27:31.440 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:63) - nullRetrieved certificate id=222
+08:27:31.446 [main] INFO  ua.com.vertex.controllers.UserController (UserDaoRealization.java:63) - Adding a new user into database
+08:27:31.455 [main] DEBUG ua.com.vertex.controllers.UserController (UserDaoRealization.java:54) - Running queries existence test E-mail to a database
+08:27:31.459 [main] DEBUG ua.com.vertex.controllers.UserController (UserDaoRealization.java:54) - Running queries existence test E-mail to a database
+08:27:31.460 [main] DEBUG ua.com.vertex.controllers.UserController (UserDaoRealization.java:54) - Running queries existence test E-mail to a database
+08:27:31.464 [main] INFO  ua.com.vertex.controllers.UserController (UserDaoRealization.java:63) - Adding a new user into database
+08:27:31.524 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:41) - nullRetrieving user id=55555
+08:27:31.525 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:47) - nullNo user id=55555
+08:27:31.525 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:50) - nullRetrieved user id=55555
+08:27:31.526 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:41) - nullRetrieving user id=22
+08:27:31.527 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:50) - nullRetrieved user id=22
+08:32:24.667 [main] DEBUG org.jboss.logging (LoggerFactory.java:19) - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+08:32:24.670 [main] INFO  org.hibernate.validator.internal.util.Version (Version.java:30) - HV000001: Hibernate Validator 5.2.4.Final
+08:32:24.681 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver (DefaultTraversableResolver.java:70) - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+08:32:24.686 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:156) - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+08:32:24.687 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:192) - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy34
+08:32:24.688 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:91) - Trying to load META-INF/validation.xml for XML based Validator configuration.
+08:32:24.689 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:54) - Trying to load META-INF/validation.xml via TCCL
+08:32:24.690 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:60) - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+08:32:24.690 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:98) - No META-INF/validation.xml found. Using annotation based configuration only.
+08:32:24.790 [main] ERROR ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:106) - null
+java.lang.RuntimeException: null
+	at ua.com.vertex.controllers.CertificateDetailsPageController.showUserPhoto(CertificateDetailsPageController.java:99) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_111]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221) [spring-web-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) [spring-web-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:114) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687) [javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:65) [spring-test-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) [javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:167) [spring-test-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134) [spring-test-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:155) [spring-test-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at ua.com.vertex.controllers.CertificateDetailsPageControllerTest.photoWebMvcShouldReturnErrorViewAfterUncheckedException(CertificateDetailsPageControllerTest.java:187) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_111]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367) [surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274) [surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) [surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161) [surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290) [surefire-booter-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242) [surefire-booter-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) [surefire-booter-2.19.1.jar:2.19.1]
+08:32:24.809 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:61) - nullProcessing request with certificateId=222
+08:32:24.810 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:72) - nullPassing certificate and user data to JSP
+08:32:24.814 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:61) - nullProcessing request with certificateId=222
+08:32:24.814 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:72) - nullPassing certificate and user data to JSP
+08:32:24.815 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:61) - nullProcessing request with certificateId=55555
+08:32:24.816 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:72) - nullPassing certificate and user data to JSP
+08:32:24.817 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:103) - nullPassing user photo to JSP
+08:32:24.818 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:61) - nullProcessing request with certificateId=222
+08:32:24.819 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:72) - nullPassing certificate and user data to JSP
+08:32:24.831 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver (DefaultTraversableResolver.java:70) - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+08:32:24.831 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:156) - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+08:32:24.832 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:192) - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy34
+08:32:24.832 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:91) - Trying to load META-INF/validation.xml for XML based Validator configuration.
+08:32:24.833 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:54) - Trying to load META-INF/validation.xml via TCCL
+08:32:24.834 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:60) - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+08:32:24.834 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:98) - No META-INF/validation.xml found. Using annotation based configuration only.
+08:32:24.841 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:103) - nullPassing user photo to JSP
+08:32:24.851 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver (DefaultTraversableResolver.java:70) - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+08:32:24.851 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:156) - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+08:32:24.851 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:192) - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy34
+08:32:24.851 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:91) - Trying to load META-INF/validation.xml for XML based Validator configuration.
+08:32:24.852 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:54) - Trying to load META-INF/validation.xml via TCCL
+08:32:24.852 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:60) - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+08:32:24.853 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:98) - No META-INF/validation.xml found. Using annotation based configuration only.
+08:32:24.949 [main] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator (PlatformResourceBundleLocator.java:126) - ValidationMessages not found.
+08:32:24.950 [main] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator (PlatformResourceBundleLocator.java:126) - ContributorValidationMessages not found.
+08:32:24.951 [main] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator (PlatformResourceBundleLocator.java:123) - org.hibernate.validator.ValidationMessages found.
+08:32:24.968 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:57) - nullRequested data is invalid
+08:32:24.977 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver (DefaultTraversableResolver.java:70) - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+08:32:24.977 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:156) - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+08:32:24.977 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:192) - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy34
+08:32:24.978 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:91) - Trying to load META-INF/validation.xml for XML based Validator configuration.
+08:32:24.978 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:54) - Trying to load META-INF/validation.xml via TCCL
+08:32:24.978 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:60) - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+08:32:24.979 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:98) - No META-INF/validation.xml found. Using annotation based configuration only.
+08:32:24.988 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:57) - nullRequested data is invalid
+08:32:24.993 [main] DEBUG ua.com.vertex.controllers.UserController (UserController.java:46) - Request to '/getCertificateByUserId' with userId=111
+08:32:24.993 [main] DEBUG ua.com.vertex.controllers.UserController (UserController.java:53) - Request to '/getCertificateByUserId' return 'user.jsp' 
+08:32:24.994 [main] DEBUG ua.com.vertex.controllers.UserController (UserController.java:46) - Request to '/getCertificateByUserId' with userId=222
+08:32:24.995 [main] DEBUG ua.com.vertex.controllers.UserController (UserController.java:53) - Request to '/getCertificateByUserId' return 'user.jsp' 
+08:32:24.995 [main] DEBUG ua.com.vertex.controllers.UserController (UserController.java:46) - Request to '/getCertificateByUserId' with userId=333
+08:32:24.996 [main] DEBUG ua.com.vertex.controllers.UserController (UserController.java:53) - Request to '/getCertificateByUserId' return 'user.jsp' 
+08:32:25.022 [main] DEBUG ua.com.vertex.controllers.UserController (RegistrationUserLogicImpl.java:39) - Check for a match on the password
+08:32:25.023 [main] DEBUG ua.com.vertex.controllers.UserController (RegistrationUserLogicImpl.java:45) - Password encryption
+08:32:25.115 [main] DEBUG ua.com.vertex.controllers.UserController (RegistrationUserLogicImpl.java:39) - Check for a match on the password
+08:32:25.115 [main] DEBUG ua.com.vertex.controllers.UserController (RegistrationUserLogicImpl.java:45) - Password encryption
+08:32:25.189 [main] INFO  ua.com.vertex.controllers.UserController (RegistrationController.java:40) - First request to registration
+08:32:25.194 [main] INFO  ua.com.vertex.controllers.CertificateDetails (CertificateDetails.java:35) - Request to '/getCertificateDetails' with certificateId=-1
+08:32:25.195 [main] INFO  ua.com.vertex.controllers.CertificateDetails (CertificateDetails.java:46) - Request to '/getCertificateDetails' return certificate
+08:32:25.195 [main] INFO  ua.com.vertex.controllers.CertificateDetails (CertificateDetails.java:35) - Request to '/getCertificateDetails' with certificateId=1
+08:32:25.195 [main] INFO  ua.com.vertex.controllers.CertificateDetails (CertificateDetails.java:46) - Request to '/getCertificateDetails' return certificate
+08:32:25.196 [main] INFO  ua.com.vertex.controllers.CertificateDetails (CertificateDetails.java:35) - Request to '/getCertificateDetails' with certificateId=1
+08:32:25.196 [main] INFO  ua.com.vertex.controllers.CertificateDetails (CertificateDetails.java:46) - Request to '/getCertificateDetails' return certificate
+08:32:25.196 [main] INFO  ua.com.vertex.controllers.CertificateDetails (CertificateDetails.java:35) - Request to '/getCertificateDetails' with certificateId=1
+08:32:25.196 [main] INFO  ua.com.vertex.controllers.CertificateDetails (CertificateDetails.java:46) - Request to '/getCertificateDetails' return certificate
+08:32:25.743 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver (DefaultTraversableResolver.java:70) - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+08:32:25.744 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:156) - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+08:32:25.744 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:178) - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+08:32:25.745 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:192) - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy34
+08:32:25.745 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:91) - Trying to load META-INF/validation.xml for XML based Validator configuration.
+08:32:25.745 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:47) - Trying to load META-INF/validation.xml via user class loader
+08:32:25.745 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:54) - Trying to load META-INF/validation.xml via TCCL
+08:32:25.746 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:60) - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+08:32:25.746 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:98) - No META-INF/validation.xml found. Using annotation based configuration only.
+08:32:25.856 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:52) - nullRetrieving certificate id=222
+08:32:25.873 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:63) - nullRetrieved certificate id=222
+08:32:25.874 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:41) - nullRetrieving user id=55555
+08:32:25.876 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:47) - nullNo user id=55555
+08:32:25.876 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:50) - nullRetrieved user id=55555
+08:32:25.877 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:52) - nullRetrieving certificate id=55555
+08:32:25.878 [main] ERROR ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:60) - nullNo certificate in DB, id=55555
+08:32:25.878 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:63) - nullRetrieved certificate id=55555
+08:32:25.880 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:41) - nullRetrieving user id=22
+08:32:25.882 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:50) - nullRetrieved user id=22
+08:32:25.888 [main] DEBUG ua.com.vertex.controllers.UserController (RegistrationUserLogicImpl.java:39) - Check for a match on the password
+08:32:25.889 [main] DEBUG ua.com.vertex.controllers.UserController (RegistrationUserLogicImpl.java:51) - Conversion of the model UserFormRegistration to User
+08:32:25.889 [main] DEBUG ua.com.vertex.controllers.UserController (RegistrationUserLogicImpl.java:51) - Conversion of the model UserFormRegistration to User
+08:32:25.890 [main] DEBUG ua.com.vertex.controllers.UserController (RegistrationUserLogicImpl.java:39) - Check for a match on the password
+08:32:25.893 [main] DEBUG ua.com.vertex.logic.CertificateLogicImpl (CertificateLogicImpl.java:36) - Call - certificateDao.getCertificateById(1);
+08:32:25.894 [main] DEBUG ua.com.vertex.logic.CertificateLogicImpl (CertificateLogicImpl.java:31) - Call - certificateDao.getAllCertificateByUserId(-1);
+08:32:25.894 [main] DEBUG ua.com.vertex.logic.CertificateLogicImpl (CertificateLogicImpl.java:36) - Call - certificateDao.getCertificateById(1);
+08:32:25.895 [main] DEBUG ua.com.vertex.logic.CertificateLogicImpl (CertificateLogicImpl.java:31) - Call - certificateDao.getAllCertificateByUserId(1);
+08:32:25.902 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:42) - Retrieved all certificates by id=1
+08:32:25.905 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:52) - nullRetrieving certificate id=-1
+08:32:25.906 [main] ERROR ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:60) - nullNo certificate in DB, id=-1
+08:32:25.906 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:63) - nullRetrieved certificate id=-1
+08:32:25.908 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:52) - nullRetrieving certificate id=55555
+08:32:25.908 [main] ERROR ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:60) - nullNo certificate in DB, id=55555
+08:32:25.908 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:63) - nullRetrieved certificate id=55555
+08:32:25.909 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:52) - nullRetrieving certificate id=1
+08:32:25.910 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:63) - nullRetrieved certificate id=1
+08:32:25.910 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:52) - nullRetrieving certificate id=1
+08:32:25.911 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:63) - nullRetrieved certificate id=1
+08:32:25.912 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:42) - Retrieved all certificates by id=-1
+08:32:25.913 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:42) - Retrieved all certificates by id=1
+08:32:25.915 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:52) - nullRetrieving certificate id=222
+08:32:25.916 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:63) - nullRetrieved certificate id=222
+08:32:25.922 [main] INFO  ua.com.vertex.controllers.UserController (UserDaoRealization.java:63) - Adding a new user into database
+08:32:25.932 [main] DEBUG ua.com.vertex.controllers.UserController (UserDaoRealization.java:54) - Running queries existence test E-mail to a database
+08:32:25.936 [main] DEBUG ua.com.vertex.controllers.UserController (UserDaoRealization.java:54) - Running queries existence test E-mail to a database
+08:32:25.937 [main] DEBUG ua.com.vertex.controllers.UserController (UserDaoRealization.java:54) - Running queries existence test E-mail to a database
+08:32:25.942 [main] INFO  ua.com.vertex.controllers.UserController (UserDaoRealization.java:63) - Adding a new user into database
+08:32:26.012 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:41) - nullRetrieving user id=55555
+08:32:26.013 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:47) - nullNo user id=55555
+08:32:26.014 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:50) - nullRetrieved user id=55555
+08:32:26.015 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:41) - nullRetrieving user id=22
+08:32:26.016 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:50) - nullRetrieved user id=22
+08:32:37.796 [main] DEBUG org.jboss.logging (LoggerFactory.java:19) - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+08:32:37.798 [main] INFO  org.hibernate.validator.internal.util.Version (Version.java:30) - HV000001: Hibernate Validator 5.2.4.Final
+08:32:37.809 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver (DefaultTraversableResolver.java:70) - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+08:32:37.814 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:156) - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+08:32:37.815 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:192) - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy34
+08:32:37.816 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:91) - Trying to load META-INF/validation.xml for XML based Validator configuration.
+08:32:37.817 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:54) - Trying to load META-INF/validation.xml via TCCL
+08:32:37.817 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:60) - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+08:32:37.817 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:98) - No META-INF/validation.xml found. Using annotation based configuration only.
+08:32:37.918 [main] ERROR ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:106) - null
+java.lang.RuntimeException: null
+	at ua.com.vertex.controllers.CertificateDetailsPageController.showUserPhoto(CertificateDetailsPageController.java:99) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_111]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221) [spring-web-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) [spring-web-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:114) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687) [javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.1.RELEASE.jar:4.3.1.RELEASE]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:65) [spring-test-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790) [javax.servlet-api-3.1.0.jar:3.1.0]
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:167) [spring-test-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:134) [spring-test-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:155) [spring-test-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at ua.com.vertex.controllers.CertificateDetailsPageControllerTest.photoWebMvcShouldReturnErrorViewAfterUncheckedException(CertificateDetailsPageControllerTest.java:187) [test-classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_111]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.12.jar:4.12]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78) [junit-4.12.jar:4.12]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367) [surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274) [surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) [surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161) [surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290) [surefire-booter-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242) [surefire-booter-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) [surefire-booter-2.19.1.jar:2.19.1]
+08:32:37.936 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:61) - nullProcessing request with certificateId=222
+08:32:37.937 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:72) - nullPassing certificate and user data to JSP
+08:32:37.942 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:61) - nullProcessing request with certificateId=222
+08:32:37.942 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:72) - nullPassing certificate and user data to JSP
+08:32:37.943 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:61) - nullProcessing request with certificateId=55555
+08:32:37.943 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:72) - nullPassing certificate and user data to JSP
+08:32:37.945 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:103) - nullPassing user photo to JSP
+08:32:37.945 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:61) - nullProcessing request with certificateId=222
+08:32:37.946 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:72) - nullPassing certificate and user data to JSP
+08:32:37.954 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver (DefaultTraversableResolver.java:70) - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+08:32:37.955 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:156) - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+08:32:37.955 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:192) - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy34
+08:32:37.955 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:91) - Trying to load META-INF/validation.xml for XML based Validator configuration.
+08:32:37.957 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:54) - Trying to load META-INF/validation.xml via TCCL
+08:32:37.957 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:60) - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+08:32:37.957 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:98) - No META-INF/validation.xml found. Using annotation based configuration only.
+08:32:37.963 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:103) - nullPassing user photo to JSP
+08:32:37.970 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver (DefaultTraversableResolver.java:70) - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+08:32:37.970 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:156) - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+08:32:37.970 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:192) - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy34
+08:32:37.970 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:91) - Trying to load META-INF/validation.xml for XML based Validator configuration.
+08:32:37.970 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:54) - Trying to load META-INF/validation.xml via TCCL
+08:32:37.971 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:60) - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+08:32:37.971 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:98) - No META-INF/validation.xml found. Using annotation based configuration only.
+08:32:38.057 [main] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator (PlatformResourceBundleLocator.java:126) - ValidationMessages not found.
+08:32:38.058 [main] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator (PlatformResourceBundleLocator.java:126) - ContributorValidationMessages not found.
+08:32:38.059 [main] DEBUG org.hibernate.validator.resourceloading.PlatformResourceBundleLocator (PlatformResourceBundleLocator.java:123) - org.hibernate.validator.ValidationMessages found.
+08:32:38.073 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:57) - nullRequested data is invalid
+08:32:38.079 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver (DefaultTraversableResolver.java:70) - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+08:32:38.079 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:156) - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+08:32:38.080 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:192) - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy34
+08:32:38.080 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:91) - Trying to load META-INF/validation.xml for XML based Validator configuration.
+08:32:38.080 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:54) - Trying to load META-INF/validation.xml via TCCL
+08:32:38.080 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:60) - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+08:32:38.081 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:98) - No META-INF/validation.xml found. Using annotation based configuration only.
+08:32:38.087 [main] INFO  ua.com.vertex.controllers.CertificateDetailsPageController (CertificateDetailsPageController.java:57) - nullRequested data is invalid
+08:32:38.090 [main] DEBUG ua.com.vertex.controllers.UserController (UserController.java:46) - Request to '/getCertificateByUserId' with userId=111
+08:32:38.090 [main] DEBUG ua.com.vertex.controllers.UserController (UserController.java:53) - Request to '/getCertificateByUserId' return 'user.jsp' 
+08:32:38.092 [main] DEBUG ua.com.vertex.controllers.UserController (UserController.java:46) - Request to '/getCertificateByUserId' with userId=222
+08:32:38.092 [main] DEBUG ua.com.vertex.controllers.UserController (UserController.java:53) - Request to '/getCertificateByUserId' return 'user.jsp' 
+08:32:38.092 [main] DEBUG ua.com.vertex.controllers.UserController (UserController.java:46) - Request to '/getCertificateByUserId' with userId=333
+08:32:38.092 [main] DEBUG ua.com.vertex.controllers.UserController (UserController.java:53) - Request to '/getCertificateByUserId' return 'user.jsp' 
+08:32:38.117 [main] DEBUG ua.com.vertex.controllers.UserController (RegistrationUserLogicImpl.java:39) - Check for a match on the password
+08:32:38.117 [main] DEBUG ua.com.vertex.controllers.UserController (RegistrationUserLogicImpl.java:45) - Password encryption
+08:32:38.205 [main] DEBUG ua.com.vertex.controllers.UserController (RegistrationUserLogicImpl.java:39) - Check for a match on the password
+08:32:38.205 [main] DEBUG ua.com.vertex.controllers.UserController (RegistrationUserLogicImpl.java:45) - Password encryption
+08:32:38.280 [main] INFO  ua.com.vertex.controllers.UserController (RegistrationController.java:40) - First request to registration
+08:32:38.283 [main] INFO  ua.com.vertex.controllers.CertificateDetails (CertificateDetails.java:35) - Request to '/getCertificateDetails' with certificateId=-1
+08:32:38.284 [main] INFO  ua.com.vertex.controllers.CertificateDetails (CertificateDetails.java:46) - Request to '/getCertificateDetails' return certificate
+08:32:38.284 [main] INFO  ua.com.vertex.controllers.CertificateDetails (CertificateDetails.java:35) - Request to '/getCertificateDetails' with certificateId=1
+08:32:38.284 [main] INFO  ua.com.vertex.controllers.CertificateDetails (CertificateDetails.java:46) - Request to '/getCertificateDetails' return certificate
+08:32:38.285 [main] INFO  ua.com.vertex.controllers.CertificateDetails (CertificateDetails.java:35) - Request to '/getCertificateDetails' with certificateId=1
+08:32:38.285 [main] INFO  ua.com.vertex.controllers.CertificateDetails (CertificateDetails.java:46) - Request to '/getCertificateDetails' return certificate
+08:32:38.285 [main] INFO  ua.com.vertex.controllers.CertificateDetails (CertificateDetails.java:35) - Request to '/getCertificateDetails' with certificateId=1
+08:32:38.286 [main] INFO  ua.com.vertex.controllers.CertificateDetails (CertificateDetails.java:46) - Request to '/getCertificateDetails' return certificate
+08:32:38.767 [main] DEBUG org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver (DefaultTraversableResolver.java:70) - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+08:32:38.767 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:156) - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+08:32:38.768 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:178) - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+08:32:38.768 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl (ConfigurationImpl.java:192) - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy34
+08:32:38.768 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:91) - Trying to load META-INF/validation.xml for XML based Validator configuration.
+08:32:38.769 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:47) - Trying to load META-INF/validation.xml via user class loader
+08:32:38.769 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:54) - Trying to load META-INF/validation.xml via TCCL
+08:32:38.769 [main] DEBUG org.hibernate.validator.internal.xml.ResourceLoaderHelper (ResourceLoaderHelper.java:60) - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+08:32:38.770 [main] DEBUG org.hibernate.validator.internal.xml.ValidationXmlParser (ValidationXmlParser.java:98) - No META-INF/validation.xml found. Using annotation based configuration only.
+08:32:38.892 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:52) - nullRetrieving certificate id=222
+08:32:38.909 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:63) - nullRetrieved certificate id=222
+08:32:38.911 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:41) - nullRetrieving user id=55555
+08:32:38.912 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:47) - nullNo user id=55555
+08:32:38.912 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:50) - nullRetrieved user id=55555
+08:32:38.914 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:52) - nullRetrieving certificate id=55555
+08:32:38.915 [main] ERROR ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:60) - nullNo certificate in DB, id=55555
+08:32:38.915 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:63) - nullRetrieved certificate id=55555
+08:32:38.917 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:41) - nullRetrieving user id=22
+08:32:38.919 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:50) - nullRetrieved user id=22
+08:32:38.929 [main] DEBUG ua.com.vertex.controllers.UserController (RegistrationUserLogicImpl.java:39) - Check for a match on the password
+08:32:38.930 [main] DEBUG ua.com.vertex.controllers.UserController (RegistrationUserLogicImpl.java:51) - Conversion of the model UserFormRegistration to User
+08:32:38.930 [main] DEBUG ua.com.vertex.controllers.UserController (RegistrationUserLogicImpl.java:51) - Conversion of the model UserFormRegistration to User
+08:32:38.931 [main] DEBUG ua.com.vertex.controllers.UserController (RegistrationUserLogicImpl.java:39) - Check for a match on the password
+08:32:38.934 [main] DEBUG ua.com.vertex.logic.CertificateLogicImpl (CertificateLogicImpl.java:36) - Call - certificateDao.getCertificateById(1);
+08:32:38.935 [main] DEBUG ua.com.vertex.logic.CertificateLogicImpl (CertificateLogicImpl.java:31) - Call - certificateDao.getAllCertificateByUserId(-1);
+08:32:38.936 [main] DEBUG ua.com.vertex.logic.CertificateLogicImpl (CertificateLogicImpl.java:36) - Call - certificateDao.getCertificateById(1);
+08:32:38.936 [main] DEBUG ua.com.vertex.logic.CertificateLogicImpl (CertificateLogicImpl.java:31) - Call - certificateDao.getAllCertificateByUserId(1);
+08:32:38.942 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:42) - Retrieved all certificates by id=1
+08:32:38.945 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:52) - nullRetrieving certificate id=-1
+08:32:38.946 [main] ERROR ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:60) - nullNo certificate in DB, id=-1
+08:32:38.946 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:63) - nullRetrieved certificate id=-1
+08:32:38.947 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:52) - nullRetrieving certificate id=55555
+08:32:38.947 [main] ERROR ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:60) - nullNo certificate in DB, id=55555
+08:32:38.948 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:63) - nullRetrieved certificate id=55555
+08:32:38.949 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:52) - nullRetrieving certificate id=1
+08:32:38.949 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:63) - nullRetrieved certificate id=1
+08:32:38.950 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:52) - nullRetrieving certificate id=1
+08:32:38.950 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:63) - nullRetrieved certificate id=1
+08:32:38.951 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:42) - Retrieved all certificates by id=-1
+08:32:38.954 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:42) - Retrieved all certificates by id=1
+08:32:38.957 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:52) - nullRetrieving certificate id=222
+08:32:38.959 [main] DEBUG ua.com.vertex.dao.CertificateDaoImpl (CertificateDaoImpl.java:63) - nullRetrieved certificate id=222
+08:32:38.967 [main] INFO  ua.com.vertex.controllers.UserController (UserDaoRealization.java:63) - Adding a new user into database
+08:32:38.977 [main] DEBUG ua.com.vertex.controllers.UserController (UserDaoRealization.java:54) - Running queries existence test E-mail to a database
+08:32:38.981 [main] DEBUG ua.com.vertex.controllers.UserController (UserDaoRealization.java:54) - Running queries existence test E-mail to a database
+08:32:38.983 [main] DEBUG ua.com.vertex.controllers.UserController (UserDaoRealization.java:54) - Running queries existence test E-mail to a database
+08:32:38.988 [main] INFO  ua.com.vertex.controllers.UserController (UserDaoRealization.java:63) - Adding a new user into database
+08:32:39.056 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:41) - nullRetrieving user id=55555
+08:32:39.057 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:47) - nullNo user id=55555
+08:32:39.057 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:50) - nullRetrieved user id=55555
+08:32:39.058 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:41) - nullRetrieving user id=22
+08:32:39.059 [main] INFO  ua.com.vertex.dao.UserDaoImpl (UserDaoImpl.java:50) - nullRetrieved user id=22

@@ -1,10 +1,13 @@
 package ua.com.vertex.beans;
 
+import java.sql.Blob;
+import java.sql.SQLException;
 import java.util.Arrays;
 import java.util.Objects;
 
 public class User {
-    private int userId;
+
+    private long userId;
     private String email;
     private String password;
     private String firstName;
@@ -14,77 +17,9 @@ public class User {
     private int discount;
     private String phone;
 
-    public static final User EMPTY_USER = new Builder().setUserId(-1).getInstance();
-
     public User() {
     }
 
-    public User(UserFormRegistration userFormRegistration) {
-        email = userFormRegistration.getEmail();
-        password = userFormRegistration.getPassword();
-        firstName = userFormRegistration.getFirstName();
-        lastName = userFormRegistration.getLastName();
-        phone = userFormRegistration.getPhone();
-    }
-
-    public static class Builder {
-        private final User user;
-
-        public Builder() {
-            user = new User();
-        }
-
-        public Builder setUserId(int userId) {
-            user.setUserId(userId);
-            return this;
-        }
-
-        public Builder setEmail(String email) {
-            user.setEmail(email);
-            return this;
-        }
-
-        public Builder setPassword(String password) {
-            user.setPassword(password);
-            return this;
-        }
-
-        public Builder setFirstName(String firstName) {
-            user.setFirstName(firstName);
-            return this;
-        }
-
-        public Builder setLastName(String lastName) {
-            user.setLastName(lastName);
-            return this;
-        }
-
-        public Builder setPassportScan(byte[] data) {
-            user.setPassportScan(data);
-            return this;
-        }
-
-        public Builder setPhoto(byte[] data) {
-            user.setPhoto(data);
-            return this;
-        }
-
-        public Builder setDiscount(int discount) {
-            user.setDiscount(discount);
-            return this;
-        }
-
-        public Builder setPhone(String phone) {
-            user.setPhone(phone);
-            return this;
-        }
-
-        public User getInstance() {
-            return user;
-        }
-    }
-
-    @Override
     public String toString() {
         return "User{" +
                 "userId=" + userId +
@@ -120,11 +55,11 @@ public class User {
         return Objects.hash(userId, email, password, firstName, lastName, passportScan, photo, discount, phone);
     }
 
-    public int getUserId() {
+    public long getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(long userId) {
         this.userId = userId;
     }
 
@@ -164,16 +99,16 @@ public class User {
         return passportScan;
     }
 
-    public void setPassportScan(byte[] data) {
-        this.passportScan = data;
+    public void setPassportScan(byte[] passportScan) {
+        this.passportScan = passportScan;
     }
 
     public byte[] getPhoto() {
         return photo;
     }
 
-    public void setPhoto(byte[] data) {
-        this.photo = data;
+    public void setPhoto(byte[] photo) {
+        this.photo = photo;
     }
 
     public int getDiscount() {
@@ -190,5 +125,79 @@ public class User {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public static class Builder {
+
+        private final User instance;
+
+        public Builder() {
+            instance = new User();
+        }
+
+        public Builder setUserId(long userId) {
+            instance.setUserId(userId);
+            return this;
+        }
+
+        public Builder setEmail(String email) {
+            instance.setEmail(email);
+            return this;
+        }
+
+        public Builder setPassword(String password) {
+            instance.setPassword(password);
+            return this;
+        }
+
+        public Builder setFirstName(String firstName) {
+            instance.setFirstName(firstName);
+            return this;
+        }
+
+        public Builder setLastName(String lastName) {
+            instance.setLastName(lastName);
+            return this;
+        }
+
+        public Builder setPassportScan(byte[] passportScan) {
+            instance.setPassportScan(passportScan);
+            return this;
+        }
+        public Builder setPassportScan(Blob passportScan) throws SQLException {
+
+            int blobLength = (int) passportScan.length();
+            byte[] blobAsBytes = passportScan.getBytes(1, blobLength);
+
+            instance.setPassportScan(blobAsBytes);
+            return this;
+        }
+
+        public Builder setPhoto(byte[] photo) {
+            instance.setPhoto(photo);
+            return this;
+        }
+
+        public Builder setPhoto(Blob photo) throws SQLException {
+
+            int blobLength = (int) photo.length();
+            byte[] blobAsBytes = photo.getBytes(1, blobLength);
+
+            instance.setPhoto(blobAsBytes);
+            return this;
+        }
+        public Builder setDiscount(int discount) {
+            instance.setDiscount(discount);
+            return this;
+        }
+
+        public Builder setPhone(String phone) {
+            instance.setPhone(phone);
+            return this;
+        }
+
+        public User getInstance() {
+            return instance;
+        }
     }
 }

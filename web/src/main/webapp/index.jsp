@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
 
-    <title>Sign In</title>
+    <title>Vertex CRM</title>
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
     <!--[if lt IE 9]>
@@ -12,7 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
     <script src="js/index.js"></script>
-    <link rel="stylesheet" type="text/css" href="../../css/registration.css"/>
+    <link rel="stylesheet" type="text/css" href="css/registration.css"/>
 </head>
 
 <body>
@@ -22,19 +22,15 @@
         <div class="registration">
             <div id="registration-form">
                 <div class="reg-form">
-                    <h3><span></span>Sign In</h3>
+                    <h3><span></span>Welcome to Vertex CRM</h3>
+                    <br>
 
                     <div class="errorSummary">
                     </div>
-                    <p><label>E-mail <span></span></label><input type="text" value="" id="reg_email"></p>
 
-                    <p><label>Password <span></span></label><input type="password" value="" maxlength="32"
-                                                                   id="reg_password"></p>
+                    <h3><a href="registration.jsp">Sign up</a></h3>
+                    <h3><a href="signIn.jsp">Sign in</a></h3>
 
-                    <div id="btRegistration" class="row-button">
-                        <input type="button" value="Sign In"></div>
-
-                    <br>
                 </div>
             </div>
         </div>

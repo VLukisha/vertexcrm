@@ -1,5 +1,5 @@
 package ua.com.vertex.controllers;
 
 
-public class UserController {
+public class AdminController {
 }
