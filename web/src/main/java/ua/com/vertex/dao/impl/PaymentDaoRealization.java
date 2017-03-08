@@ -3,12 +3,13 @@ package ua.com.vertex.dao.impl;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.springframework.stereotype.Repository;
 import ua.com.vertex.beans.Payment;
 import ua.com.vertex.dao.PaymentDaoInf;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
+@Repository
 public class PaymentDaoRealization implements PaymentDaoInf {
 
     private NamedParameterJdbcTemplate jdbcTemplate;
